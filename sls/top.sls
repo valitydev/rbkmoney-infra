@@ -1,6 +1,6 @@
 {{ saltenv }}:
   salt-master.linode.rbkmoney.dev:
-    - gentoo 
+    - gentoo  # +
     - openrc
     - ssl
     - gentoo.portage.packages
