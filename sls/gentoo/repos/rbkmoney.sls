@@ -23,6 +23,8 @@ include:
     - replace: False
     - user: root
     - mode: 644
+    - require:
+      - file: /etc/portage/repos.conf
   ini.options_present:
     - require:
       - file: /etc/portage/repos.conf/{{ repo_name }}.conf
@@ -33,10 +35,3 @@ include:
           sync-type: git
           clone-depth: 1
           sync-uri: '{{ sync_uri }}'
-
-/etc/portage/repos.conf/{{ repo_name }}.conf-absent:
-  ini.options_absent:
-    - name: /etc/portage/repos.conf/{{ repo_name }}.conf
-    - sections:
-        {{ repo_name }}:
-          - sync-depth

@@ -8,6 +8,8 @@ include:
     - replace: False
     - user: root
     - mode: 644
+    - require:
+      - file: /etc/portage/repos.conf
   ini.options_present:
     - require:
       - file: /etc/portage/repos.conf/gentoo.conf
