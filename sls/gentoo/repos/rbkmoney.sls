@@ -24,7 +24,7 @@ include:
     - user: root
     - mode: 644
     - require:
-      - file: /etc/portage/repos.conf
+      - file: /etc/portage/repos.conf/
   ini.options_present:
     - require:
       - file: /etc/portage/repos.conf/{{ repo_name }}.conf
