@@ -6,7 +6,7 @@ include:
     - source: salt://gentoo/files/make.conf
     - mode: 644
 
-# stub!
+# stub! several common states require augeas: manage-make-conf
 manage-make-conf:
   augeas.change:
     - context: /files/dev/null
