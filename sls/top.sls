@@ -1,10 +1,10 @@
 {{ saltenv }}:
   salt-master.linode.rbkmoney.dev:
-    - gentoo  # +
-    - openrc  # +
-    - ssl
-    - gentoo.extra-utils
-    - ssh
+    - gentoo
+    - openrc
     - core
-    - salt.minion  # ?
-    - salt.master  # ?
+    - gentoo.extra-utils
+    - ssl
+    - ssh
+    - salt.minion
+    - salt.master
