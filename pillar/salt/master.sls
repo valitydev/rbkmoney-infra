@@ -51,7 +51,7 @@ salt:
     extra:
       common: 
         default-branch: master
-        remote: 'git+ssh://git@github.com/rbkmoney/salt-common'
+        remote: 'https://github.com/rbkmoney/salt-common.git'
     main: 
       name: rbkmoney-infra
-      remote: 'git+ssh://git@github.com/rbkmoney/rbkmoney-infra'
+      remote: 'https://github.com/rbkmoney/rbkmoney-infra.git'
