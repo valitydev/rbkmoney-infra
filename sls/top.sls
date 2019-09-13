@@ -3,9 +3,8 @@
     - gentoo  # +
     - openrc
     - ssl
-    - gentoo.portage.packages
     - gentoo.extra-utils
     - ssh
     - core
-    - salt.minion
-    - salt.master
+    - salt.minion  # ?
+    - salt.master  # ?
