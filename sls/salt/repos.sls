@@ -89,9 +89,7 @@ salt-repo-{{ reponame }}-_mirror:
     - force_clone: True
     - force_fetch: True
     - force_reset: True
-    - identity: /var/salt/ssh/salt
     - require:
-      - file: /var/salt/ssh/salt
       - file: /var/salt/{{ reponame }}
     - require_in:
       - file: /etc/salt/master.d/roots.conf
