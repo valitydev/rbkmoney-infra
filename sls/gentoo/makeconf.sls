@@ -9,8 +9,8 @@ include:
 # stub!
 manage-make-conf:
   augeas.change:
-    - name: /dev/null
-    - changes: []
+    - context: /files/dev/null
+    - changes: [set 1 0]
     - require:
       - file: /etc/portage/make.conf
       - file: /usr/share/augeas/lenses/makeconf.aug
