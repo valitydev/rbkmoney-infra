@@ -16,7 +16,6 @@ include:
     - reload_modules: True
     - require:
       - file: {{ repo_name }}
-      - file: /var/lib/layman/
 
 /etc/portage/repos.conf/{{ repo_name }}.conf:
   file.managed:
