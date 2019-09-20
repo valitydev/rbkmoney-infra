@@ -1,4 +1,4 @@
-{% set sync_uri = 'rsync://rsync.de.gentoo.org/gentoo-portage/' %}
+{% set sync_uri = 'https://github.com/gentoo-mirror/gentoo.git' %}
 include:
   - gentoo.portage
 
@@ -19,5 +19,6 @@ include:
         gentoo:
           location: '/usr/portage'
           auto-sync: 'true'
-          sync-type: rsync
+          sync-type: git
+          clone-depth: 1
           sync-uri: '{{ sync_uri }}'
