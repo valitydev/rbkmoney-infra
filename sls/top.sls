@@ -1,5 +1,5 @@
 {{ saltenv }}:
-  salt-master.linode.rbkmoney.dev:
+  '*':
     - gentoo
     - openrc
     - core
@@ -7,4 +7,6 @@
     - ssl
     - ssh
     - salt.minion
+
+  salt-master.linode.rbkmoney.dev:
     - salt.master
